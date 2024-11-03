@@ -1,0 +1,7 @@
+Celery Worker and Celery Beat
+
+redis-server
+
+celery -A app:celery_app worker --loglevel INFO
+
+celery -A app:celery_app beat -l INFO
